@@ -22,4 +22,4 @@ O - ......
 Z - Zpel
 
 
-"Dagens datum" up in the right corner.
+"Dagens datum" + "Dagens namn" up in the right corner.
