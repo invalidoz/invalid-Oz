@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -13,7 +13,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/cover.css" rel="stylesheet">
+    <link href="cover.css" rel="stylesheet">
 	
 		<link rel="stylesheet" href="css/sidebar-left.css">
 
@@ -57,77 +57,19 @@
               <h3 class="masthead-brand">..:: INVALIDoz ::..</h3>
               <ul class="nav masthead-nav">
                 <li class="active"><a href="./">Hem</a></li>
-                <li><a href="features.php">Tjänster</a></li>
+                <li><a href="features.php">Tj�nster</a></li>
                 <li><a href="contact.php">Kontakt</a></li>
               </ul>
             </div>
           </div>
 
           <div class="inner cover">
-            <h1 class="cover-heading">..:: Dagens Bild ::..</h1>
-			<?php
-function getimgs($dir) {
-  $imgs = array();
-  $filetypes = array("gif", "jpg", "jpeg", "png");
-  if (is_dir($dir)) {
-     if ($dh = opendir($dir)) {
-       while (($file = readdir($dh)) !== false) {
-         if (filetype($dir . "/" . $file) != "dir" && ($pos = strrpos($file, ".")) !== FALSE) {
-           $extension = strtolower(substr($file, $pos + 1));
-           if (in_array($extension, $filetypes)) {
-             $imgs[] = $dir . "/" . $file;
-           }
-         }
-       }
-       closedir($dh);
-    }
-  }
-  return $imgs;
-}
-
-	$image = ""; // vilken bild ska visas nu?
-	if (!file_exists("POTD.txt")) 
-	{
-		list($image) = getimgs("POTD_images"); // tar första bilden
-		$handle = fopen("POTD.txt", "w");
-		fwrite($handle, date("d") . "\r\n" . $image);
-		fclose($handle);
-	} 
-	else 
-	{
-		list($day, $fimage) = file("POTD.txt");
-		$day = rtrim($day);
-		if ($day == date("d")) 
-		{ //om dagen inte har ändrats, ha kvar samma bild som förut
-			$image = $fimage;
-		}
-		else 
-		{ // Ändra bara bild om dagen i filen inte är samma.
-				// om det inte är samma, ta en ny bild och skriv till filen.
-				// är bilden i potd.txt giltig? isf ta nästa bild i mappen.
-			$valid_images = getimgs("POTD_images");
-			
-			if (($pos = array_search($fimage, $valid_images)) !== FALSE) 
-			{
-				// jorå, finns med i listan
-				if ($pos >= count($valid_images) - 1)
-				$image = $valid_images[0];
-				else
-				$image = $valid_images[$pos + 1];
-			}	
-			else
-				$image = $valid_images(mt_rand(0, count($valid_images) - 1));
-		$handle = fopen("POTD.txt", "w");
-		
-		fwrite($handle, date("d") . "\r\n" . $image);
-		fclose($handle);
-		}
-	}
-	echo "<img src=\"$image\" alt=\"$image\">";
-?>
-			
-			
-            
+            <h1 class="cover-heading">..::I N V A L I D o z::..</h1>
+            <p class="lead"></p>
+            <p class="lead"></p>
+            <p class="lead">
+              <a href="#" class="btn btn-lg btn-default"></a>
+            </p>
           </div>
 
           <div class="mastfoot">
