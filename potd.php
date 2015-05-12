@@ -85,23 +85,13 @@ echo "<img src=\"$image\" alt=\"$image\" width=\"450px\">";
 
 </h2>
 
-<hr>
 
-<div class="center">
-<a href="https://plus.google.com/115314517217404072883?prsrc=3" style="text-decoration: none; color: #333;">
-<div style="display: inline-block;"><span style="float: left; font: bold 13px/16px arial,sans-serif; margin-right: 4px;">Hitta gamla Dagens bilder</span>
-<span style="float: left; font: 13px/16px arial,sans-serif; margin-right: 11px;">på</span>
-<div style="float: left;"><img src="https://ssl.gstatic.com/images/icons/gplus-16.png" width="16" height="16" style="border: 0;"/></div>
-<div style="clear: both"></div></div></a>
-</div>
 
 <hr>
 
 <p class="center"><a href="#sidtop" title="Till toppen av denna sida">Till toppen</a></p>
 
-<div class="center">
-<iframe src="http://imp.double.net/imp.html?a19449c551;target=_top" width="468" height="60" style="border:0px none black;" scrolling="no" frameborder="0" rel="nofollow"></iframe>
-</div>
+
 <div class="center">
 
 </div>
