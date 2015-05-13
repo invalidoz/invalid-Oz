@@ -1,0 +1,62 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	margin:0 auto;
+}
+ul{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	
+}
+
+.sidebar-links{
+	position:relative;
+	left:-115px;
+	width:120px;
+	transition:left 1s;
+}
+
+
+.sidebar-links:hover{
+	left:0;
+}
+.sidebar-links li{
+	margin-left:40px;
+	
+}
+.logo{
+	border-right:solid red 5px;
+}
+.index-menu{
+	border-right:solid blue 5px;
+}
+
+.news-menu{
+	border-right:solid yellow 5px;
+}
+				
+.video-menu{
+	border-right:solid green 5px;
+}
+.crew-menu{
+	border-right:solid orange 5px;
+}
+.mail-menu{
+	border-right:solid purple 5px;
+}
+.irc-menu{
+	border-right:solid pink 5px;
+}
+.potd-menu{
+	border-right:solid Gray 5px;
+}
+.shopen-menu{
+	border-right:solid white 5px;
+}
+.zpel-menu{
+	border-right:solid aqua 5px;
+}
+
